@@ -35,8 +35,8 @@ class Calculator {
 
     compute() {
         let computation;
-        const prev = parseFloat(this.previousOperand);
-        const current = parseFloat(this.currentOperand);
+        const previous = parseFloat(this.previousOperand);
+        const currentOperandValue = parseFloat(this.currentOperand);
         if (isNaN(prev) || isNaN(current)) return;
         switch (this.operation) {
             case '+':
